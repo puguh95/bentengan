@@ -1,0 +1,6 @@
+var mytitel;
+
+(function (){
+	var titel = document.getElementById('titel')
+			c_titel = titel.getContext('2d');
+}();

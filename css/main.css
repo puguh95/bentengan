@@ -1,0 +1,41 @@
+header {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+canvas {
+	position: absolute; /*tinggal ganti absolute*/
+	top: 10px;
+	left: 33px;
+	height:auto;
+	width:auto;
+	size:auto;
+	table-layout:auto;
+	
+}
+
+#game {
+	position: fixed;
+	height:auto;
+	width:auto;
+	table-layout:auto;
+}
+
+footer {
+	display: block;
+	position: absolute;
+	top: 500px;
+	left: 10px;
+	padding-bottom: 30px;
+}
+
+
+
+footer small {
+	display: block;
+	margin: 0;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+}
