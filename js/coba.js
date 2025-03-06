@@ -246,7 +246,7 @@ function Time(){
 			bg_sound.load();
 			bg_sound.play();
 			drawlatar(c_latar,rumput);
-			jalan.src = 'img/Road.png';
+			jalan.src = 'img/jalan.png';
 			ui.src= 'img/ui2.png';
 			benteng.src = 'img/Towergedung1.png';
 			chara = level[2];
