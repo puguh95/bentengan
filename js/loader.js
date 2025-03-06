@@ -24,7 +24,7 @@ var	lapangan = new Image(),
 	button = new Image(),
 	button_pressed = new Image(),
 	ui = new Image(),
-	masagi = new Image(),
+	// masagi = new Image(),
 	char_ui = new Image();
 	
 	
@@ -34,7 +34,7 @@ var	lapangan = new Image(),
 	salju.src = 'img/salju.jpg';
 	ui_win.src = 'img/ui_win.png';
 	jalan.src = 'img/jalan.png';
-	masagi.src = 'img/masagi.png';
+	// masagi.src = 'img/masagi.png';
 	pagar.src = 'img/pagar.png';
 	benteng.src = 'img/Towergedung.png';
 	chara_win.src = 'img/char_win.png';
