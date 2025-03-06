@@ -4,13 +4,13 @@
 	var bgmenu = new Image(),
 			bt_play = new Image(),
 			rumput = new Image(),
-			// masagi = new Image(),
+			masagi = new Image(),
 			
 			clicked_sound = new Audio('audio/ting.mp3'),
 			mousemove_sound = new Audio('audio/mose.wav');
 
 	//source image
-			// masagi.src = 'img/masagi.png';
+			masagi.src = 'img/masagi.png';
 			bgmenu.src = 'img/bgmenu.png';
 			rumput.src = 'img/rumput.jpg';
 			bt_play.src = 'img/menu.png';
@@ -119,7 +119,7 @@ function drawbutton(ctx,img){
 		ctx.clearRect(450,y[i],400,105);
 		ctx.drawImage(img,sx[i],sy[i],w[i],h[i],x[i],y[i],sw[i],sh[i]);
 		ctx.clearRect(menu.width-230,menu.height-130,masagi.width/6,masagi.height/6);
-		// ctx.drawImage(masagi,menu.width-230,menu.height-130,masagi.width/6,masagi.height/6);
+		ctx.drawImage(masagi,menu.width-230,menu.height-130,masagi.width/6,masagi.height/6);
 	}
 }
 
