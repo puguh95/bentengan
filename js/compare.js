@@ -1,5 +1,5 @@
 function mundur(j,mod){
-	chara[j].isControlled = true;
+	// chara[j].isControlled = true;
 	if(tower[1].x > chara[j].x){
 			chara[j].x += chara[j].speed * mod ;
 		}
@@ -17,7 +17,7 @@ function mundur(j,mod){
 }
 
 function back(j,mod){
-		chara[j].isControlled = true;
+		// chara[j].isControlled = true;
 		if(tower[1].x > chara[j].x){
 			chara[j].x += chara[j].speed * mod * 0.3 / chara.length;
 		}
@@ -35,17 +35,16 @@ function back(j,mod){
 	
 }
 
-function detectAlly(i,j,mod){ //area penglihatan musuh untuk mendeteksi player
+function detectEnemy(i,j,mod){ //area penglihatan musuh untuk mendeteksi player
 	var angka;
 	angka = Math.floor(Math.random()*(max-min+1)+min); //get random value
-	chara[j].isControlled = true;
 	if((chara[i].x + (chara[i].w*angka) > chara[j].x) && 
 	(chara[i].x < chara[j].x + (chara[j].w*angka)) &&
 	(chara[i].y + (chara[i].h*angka) > chara[j].y) && 
 	(chara[i].y < chara[j].y + (chara[j].h*angka))){
 		chara[j].isControlled = true;
 		if(chara[i].power < chara[j].power){
-			setTimeout(attack(i,j,mod),5); //musuh ngejar
+			attack(i,j,mod); //musuh ngejar
 		}
 		else
 		if(chara[i].power > chara[j].power ){
@@ -112,20 +111,20 @@ function mentok(canvas,i){
 	}
 	else
 	if(i.stat=='enemy'){
-	if(i.x < area.x){
-		i.x = area.x;
-	}
-	else 
-	if(i.x+i.w > area.x + area.w){
-		i.x = area.x + area.w - i.w;
-	}
-	if(i.y < area.y){
-		i.y = area.y;
-	}
-	else 
-	if(i.y + i.h > area.y + area.h){
-		i.y = area.y + area.h - i.h;
-	}
+		if(i.x < area.x){
+			i.x = area.x;
+		}
+		else 
+		if(i.x+i.w > area.x + area.w){
+			i.x = area.x + area.w - i.w;
+		}
+		if(i.y < area.y){
+			i.y = area.y;
+		}
+		else 
+		if(i.y + i.h > area.y + area.h){
+			i.y = area.y + area.h - i.h;
+		}
 	}
 	
 }
@@ -157,15 +156,15 @@ if((a.x + a.w  > b.x) &&
 			}
 			
 			if((a.stat=='hero') && (b.stat=='enemy')){
-				// if(a.power > b.power){
-				// tawananY[0] = tawananY[0] + b.h;
-				// b.x = tower[0].x+b.w;
-				// b.y = tower[0].y + tawananY[0];
-				// b.stat = 'tawanan';
-				// score += 10;
-				// console.log('menangkap!, dapat score');
-				// }
-				// else
+				if(a.power > b.power){
+				tawananY[0] = tawananY[0] + b.h;
+				b.x = tower[0].x+b.w;
+				b.y = tower[0].y + tawananY[0];
+				b.stat = 'tawanan';
+				score += 10;
+				console.log('menangkap!, dapat score');
+				}
+				else
 				if(a.power<b.power){
 				a.x = tower[1].x - a.w;
 				tawananY[1] = tawananY[1] + a.h;

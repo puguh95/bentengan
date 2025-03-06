@@ -1,13 +1,13 @@
 //get canvas
 var	game = document.getElementById('game'),
-	latar = document.getElementById('latar');
+	latar = document.getElementById('latar'),
 	// about = document.getElementById('about');
-	// batasarea = document.getElementById('batasarea');
+	batasarea = document.getElementById('batasarea');
 //end
 
 //get context
 var c_game = game.getContext('2d'),
-		// c_area = batasarea.getContext('2d'),
+	c_area = batasarea.getContext('2d'),
 	c_latar = latar.getContext('2d');
 	// c_about = about.getContext('2d');
 //end
@@ -64,6 +64,7 @@ var menolong_sound = new Audio('audio/menolong.wav');
 	win_sound.load();
 	menolong_sound.load();
 	bg_sound.loop = true;
+	bg_sound.volume = 0.1;
 	
 //end	
 
@@ -74,6 +75,7 @@ var menolong_sound = new Audio('audio/menolong.wav');
 window.onload = function(){
 	drawlatar(c_latar,rumput);
 	drawbutton(c_menu,bt_play);
+	// drawarea(c_area);
 	var inval;
 	clearInterval(inval);
 	inval = setInterval(run,10);

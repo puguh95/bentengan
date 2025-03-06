@@ -4,7 +4,6 @@
 		ctx.rect(0,0,game.width,game.height);
 		ctx.fillStyle = pattern;
 		ctx.fill();
-		// ctx.drawImage(a,0,0,game.width,game.height);
 	}
 
 	function drawbgover(ctx,a,b){

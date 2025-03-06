@@ -109,23 +109,23 @@
 		that.image = options.image;
 		
 		that.update = function () {
-						kara_image();
+			kara_image();
             tickCount += 1;
 
             if (tickCount > ticksPerFrame) {
 
 				tickCount = 0;
-								if(arrow_keys_handler == true){
-                // If the current frame index is in range
-                if (frameIndex < numberOfFrames - 1) {	
-                    // Go to the next frame
-                    frameIndex += 1;
-                }
-								else {
-                    frameIndex = 0;
-										arrow_keys_handler = false;
-                }
-								}
+				if(arrow_keys_handler == true){
+					// If the current frame index is in range
+					if (frameIndex < numberOfFrames - 1) {	
+						// Go to the next frame
+						frameIndex += 1;
+					}
+					else {
+						frameIndex = 0;
+						arrow_keys_handler = false;
+					}
+				}
             }
 						
         };
@@ -278,7 +278,7 @@
 		that.image = options.image;
 		
 		that.update = function () {
-						kara_image();
+			kara_image();
             tickCount += 1;
 
             if (tickCount > ticksPerFrame) {
@@ -289,9 +289,9 @@
                     // Go to the next frame
                     frameIndex += 1;
                 }
-								else {
+				else {
                     frameIndex = 0;
-										arrow_keys_handler = false;
+					arrow_keys_handler = false;
                 }
             }
 						

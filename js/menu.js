@@ -49,7 +49,7 @@ menu.addEventListener('click',function(){
 			titel.style.display='none';
 			rules.style.display='none';
 			game.style.display='initial';
-			// batasarea.style.display = 'initial';
+			batasarea.style.display = 'initial';
 			bg_sound.currentTime = 0;
 			bg_sound.play();
 			drawlatar(c_latar,teksture);
