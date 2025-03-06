@@ -233,7 +233,7 @@ function Time(){
 				bg_sound.load();
 				bg_sound.play();
 			drawlatar(c_latar,salju);
-			jalan.src = 'img/road2.png';
+			jalan.src = 'img/Road2.png';
 			ui.src= 'img/ui1.png';
 			benteng.src = 'img/Towergedung2.png';
 			chara = level[1];
@@ -246,7 +246,7 @@ function Time(){
 			bg_sound.load();
 			bg_sound.play();
 			drawlatar(c_latar,rumput);
-			jalan.src = 'img/road.png';
+			jalan.src = 'img/Road.png';
 			ui.src= 'img/ui2.png';
 			benteng.src = 'img/Towergedung1.png';
 			chara = level[2];
@@ -259,7 +259,7 @@ function Time(){
 			bg_sound.load();
 			bg_sound.play();
 			drawlatar(c_latar,teksture);
-			jalan.src = 'img/road.png';
+			jalan.src = 'img/Road1.png';
 			ui.src= 'img/ui.png';
 			benteng.src = 'img/Towergedung.png';
 			chara = level[3];
@@ -272,7 +272,7 @@ function Time(){
 			bg_sound.load();
 			bg_sound.play();
 			drawlatar(c_latar,salju);
-			jalan.src = 'img/road2.png';
+			jalan.src = 'img/Road2.png';
 			ui.src= 'img/ui1.png';
 			benteng.src = 'img/Towergedung2.png';
 			chara = level[4];
